@@ -130,7 +130,6 @@ const Search = () => {
               type="text"
               className="h-4/5 w-9/12 border-none focus:outline-none focus:shadow-outline"
               placeholder="Search stories by title, url or author"
-              // ref={searchref}
               value={searchText}
               onChange={(event) => setSearchText(event.target.value)}
             />
@@ -236,7 +235,9 @@ const Search = () => {
 
         {hits.length === 0 && (
           <div className="bg-main-background-color h-screen">
-            <p className="text-lg snap-center text-center m-5">Loading ...</p>
+            <p className="text-lg snap-center text-center m-5">
+              No data found.
+            </p>
           </div>
         )}
         <div className="flex flex-row items-center justify-center">
