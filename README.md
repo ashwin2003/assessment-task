@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Deployed Link
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The deployed website can be accessed at https://willowy-brigadeiros-f4215a.netlify.app/
 
-## Available Scripts
+## GitHub Repository Link
 
-In the project directory, you can run:
+The GitHub repository for the project can be found at https://github.com/ashwin2003/assessment-task
 
-### `npm start`
+## New Stories Page
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The default page displays all the stories ordered from newest to oldest, with pagination.
+Each story is linked to its respective link and all the data visible is fetched from the API, including time, points, number of comments, total results etc.
+The next page of stories can be viewed by clicking on the "More" button at the bottom of the page. The page will scroll to the top when the next page is viewed.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Search Page
 
-### `npm test`
+The search page can be accessed by typing a string in the footer search box on the home page.
+The page implements filters in line with the Hacker News Algolia search documentation.
+Error handling and other functionalities have been properly implemented.
+The number of results and the time taken to fetch are dynamic and fetched from the API.
+Pagination has also been added to the search page.
+The logic of the pagination is custom and new functionalities can be added in the future.
+The structure for stories and comments is the same as the Hacker News website.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technical Details
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+No external library has been used. All components are custom-made.
+The Hacker News Algolia API has been used.
+A global state management library has not been used, instead state management in functional component using the useState hook has been used.
+React Hooks have been used for proper functionality.
+Animations have been used for a better UI, for example when the "More" button is clicked or when the page changes.
+The project has been developed following best practices.
