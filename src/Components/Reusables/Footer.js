@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <>
       <div className="h-0.5 bg-main-orange-color mb-3 "></div>
-      <div className="flex justify-center mb-2">
+      <div className="hidden md:flex justify-center mb-2 m-auto ">
         <p className="text-xs inline m-1">Guidelines</p>
         <p className="text-xs inline m-1">|</p>
 

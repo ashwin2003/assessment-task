@@ -33,7 +33,7 @@ const Home = () => {
   };
 
   return (
-    <div className="flex flex-col mx-auto w-4/5 m-auto my-2 bg-main-background-color lg:w-10/12 sm:w-auto">
+    <div className="flex flex-col mx-auto w-full m-auto lg:my-2 bg-main-background-color lg:w-10/12 ">
       <Navbar />
       <div className="bg-main-background-color h-full">
         {data.length > 0 ? (

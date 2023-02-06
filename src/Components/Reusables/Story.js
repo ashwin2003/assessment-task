@@ -4,7 +4,7 @@ import upArrow from "../../Assets/Icons/up-arrow.gif";
 const Story = ({ hit, page, index, minutes, hours, days }) => {
   return (
     <a
-      className="flex flex-row mb-2"
+      className="flex flex-row mx-2 text-justify"
       target="_blank"
       href={hit.url}
       key={hit.objectID}
@@ -18,7 +18,7 @@ const Story = ({ hit, page, index, minutes, hours, days }) => {
             </p>
           </div>
           <div>
-            <img src={upArrow} alt="" className="h-2.5 w-2.5 mt-1.5 mx-1" />
+            <img src={upArrow} alt="" className="h-2.5 w-2.5 mt-1.5 mr-1" />
           </div>
         </>
       )}
@@ -49,7 +49,7 @@ const Story = ({ hit, page, index, minutes, hours, days }) => {
         </div>
       ) : (
         <div>
-          <p className="text-sm inline mx-2">{hit.title}</p>
+          <p className="text-sm inline ">{hit.title}</p>
           {hit.url && (
             <p className=" text-xs inline text-link-text-color hover:underline">
               {" ( "}

@@ -154,62 +154,66 @@ const Search = () => {
             Home
           </Link>
         </div>
-        <div className="flex flex-row m-3 h-12 justify-between ">
-          <div className="flex flex-row items-center gap-4  ">
-            <p className=" text-sm inline text-sub-heading-text-color">
+        <div className="flex flex-col md:flex-row m-3 items-center gap-2 md:justify-between ">
+          <div className="flex flex-col md:flex-row items-center gap:2 md:gap-4 ">
+            <p className=" text-sm inline text-heading-text-color">
               Search
+              <select
+                className="bg-main-background-color  border-text-sub-heading-text-color p-2 border-2  m-2 md:mb-0"
+                ref={tagRef}
+                onChange={onSubmitHandler}
+              >
+                <option className="text-black" value="all">
+                  All
+                </option>
+                <option className="text-black" value="story">
+                  Stories
+                </option>
+                <option className="text-black" value="comment">
+                  Comments
+                </option>
+              </select>
             </p>
-            <select
-              className="bg-main-background-color  border-text-sub-heading-text-color px-1 border-2 "
-              ref={tagRef}
-              onChange={onSubmitHandler}
-            >
-              <option className="text-black" value="all">
-                All
-              </option>
-              <option className="text-black" value="story">
-                Stories
-              </option>
-              <option className="text-black" value="comment">
-                Comments
-              </option>
-            </select>
 
-            <p className="text-sm inline text-sub-heading-text-color">by</p>
-            <select
-              className="bg-main-background-color  border-text-sub-heading-text-color px-1 border-2 "
-              ref={dateRef}
-              onChange={onSubmitHandler}
-            >
-              <option className="text-black" value="search">
-                Popularity
-              </option>
-              <option className="text-black" value="search_by_date">
-                Date
-              </option>
-            </select>
+            <p className="text-sm inline tex-heading-text-color">
+              by
+              <select
+                className="bg-main-background-color  border-text-sub-heading-text-color p-2 border-2  m-2 md:mb-0"
+                ref={dateRef}
+                onChange={onSubmitHandler}
+              >
+                <option className="text-black" value="search">
+                  Popularity
+                </option>
+                <option className="text-black" value="search_by_date">
+                  Date
+                </option>
+              </select>
+            </p>
 
-            <p className="text-sm inline text-sub-heading-text-color">for</p>
-            <select
-              className="bg-main-background-color  border-text-sub-heading-text-color px-1 border-2"
-              onChange={(e) => onSubmitHandler(e)}
-            >
-              <option className="text-black" value="all">
-                All time
-              </option>
-              <option className="text-black" value="24h">
-                Last 24h
-              </option>
-              <option className="text-black" value="week">
-                Past Week
-              </option>
-              <option className="text-black" value="month">
-                Past Month
-              </option>
-              <option className="text-black" value="year">
-                Past Year
-              </option>
-            </select>
+            <p className="text-sm inline text-heading-text-color">
+              for
+              <select
+                className="bg-main-background-color  border-text-sub-heading-text-color p-2 border-2  m-2 md:mb-0"
+                onChange={(e) => onSubmitHandler(e)}
+              >
+                <option className="text-black" value="all">
+                  All time
+                </option>
+                <option className="text-black" value="24h">
+                  Last 24h
+                </option>
+                <option className="text-black" value="week">
+                  Past Week
+                </option>
+                <option className="text-black" value="month">
+                  Past Month
+                </option>
+                <option className="text-black" value="year">
+                  Past Year
+                </option>
+              </select>
+            </p>
           </div>
           <div className=" flex flex-row gap-2 items-center">
             <p className=" text-sm inline text-main-text-color">
